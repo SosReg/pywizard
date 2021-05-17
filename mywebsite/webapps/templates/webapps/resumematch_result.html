@@ -1,0 +1,22 @@
+{% extends 'webapps/resumematch.html' %}
+{% block resume_match_content %}
+    <div class="row">
+    <div class = col>
+        <h5>Missing Words:</h5>
+            <textarea readonly class="form-control-inline" name="output_1" rows="10" cols="70">
+                {% for post in posts %}
+                    {{ post.missing_words }}
+                {% endfor %}
+        </textarea>
+    </div>
+    <div class="col">
+    <br><br>
+        <h5>Match Percentage:</h5>
+        <h5>
+            {% for post in posts %}
+                <a>{{ post.matchPercentage }}</a>
+            {% endfor %}
+        </h5>
+    </div>
+    </div>
+{% endblock %}

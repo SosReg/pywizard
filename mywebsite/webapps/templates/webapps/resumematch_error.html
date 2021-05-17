@@ -1,0 +1,11 @@
+{% extends "webapps/resumematch.html" %}
+{% block resume_match_content %}
+<div class="alert alert-primary" role="alert">
+  Oops!! Something went wrong !!!
+    <p>
+        {% for post in posts %}
+        <a>{{ post}}</a>
+        {% endfor %}
+    </p>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+{% extends 'home/base.html' %}
+{% block content %}
+    <div class="row">
+        <div class="col w3-hide-small w3-hide-medium"></div>
+        <div class="col">
+            <div class="w3-card-4">
+                <div class="card-header">
+                    <strong>Apps</strong>
+                </div>
+                <a href="/webapps">
+                    <img class="img-fluid" src="/static/home/pic1.png" alt="Apps image">
+                </a>
+                <div class="card-footer text-center >
+                    <p class="card-text">Some ultra light, but useful, web & computer apps. </p>
+                    <a href="/webapps" class="btn btn-outline-primary" role="button" style="align-content: center">Apps</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="w3-card-4">
+                <div class="card-header">
+                    <strong>Tutorials</strong>
+                </div>
+                <a href="#">
+                <img class="img-fluid" src="/static/home/tutorials.jpg" alt="Tutorials image">
+                </a>
+                <div class="card-footer text-center >
+                    <p class="card-text">Learn programming here, from basics to advanced </p>
+                    <a href="/tutorials" class="btn btn-outline-primary" role="button" style="align-content: center">Tutorials</a>
+                </div>
+            </div>
+        </div>
+        <div class="col w3-hide-small w3-hide-medium"></div>
+    </div>
+{% endblock %}

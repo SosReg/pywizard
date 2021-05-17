@@ -1,0 +1,46 @@
+<head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2444709270693684",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+
+{% extends 'home/base.html' %}
+{% block content %}
+    <div class="row">
+		<div class="col w3-hide-small w3-hide-medium"></div>
+		
+        <div class="col">
+            <div class="w3-card-4">
+                <div class="card-header">
+                    <h5><b>Resume Match</b></h5>
+                </div>
+                <a href="resumematch">
+                <img class="img-fluid" src="/static/home/resume_match.png" alt="Resume Match Image">
+                </a>
+                <div class="card-footer text-center">
+                    <a href="resumematch" class="btn btn-outline-primary" role="button">Resume Match</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="w3-card-4">
+                <div class="card-header">
+                    <h5><b>Other Apps</b></h5>
+                </div>
+                <a href="#">
+                <img class="img-fluid" src="/static/home/comming_soon.png" alt="Coming Soon Image">
+                </a>
+                <div class="card-footer text-center">
+                <a href=" #" class="btn btn-outline-primary disabled" role="button">Coming Soon!</a>
+                </div>
+            </div>
+        </div>
+        <div class="col w3-hide-small w3-hide-medium"></div>
+        
+    </div>
+
+{% endblock %}

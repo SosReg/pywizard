@@ -1,0 +1,34 @@
+{% extends 'home/base.html' %}
+{% block content %}
+<div class="container">
+
+    <h2 align="left">
+        <button type="button" class="btn btn-dark" disabled><h4 style="color: white">Resume Match</h4></button>
+{#        <span class="badge badge-dark">Resume Match</span>#}
+    </h2>
+    <p></p>
+    <form action="submit" method="get">
+        <div class="card-deck">
+            <div class="col">
+                <label>Please paste your resume here</label>
+                <textarea class="form-control-inline" name="user_resume" rows="10" cols="50"></textarea>
+            </div>
+            <div class="col">
+                <label>Please paste the job description here</label>
+                <textarea class="form-control-inline" name="job_description" rows="10" cols="50"></textarea>
+            </div>
+            <div class="col">
+                <br><br>
+                <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
+            </div>
+            <div class="col">
+                <p></p>
+                <p>Download the app: </p>
+                <a class="button" href="https://sourceforge.net/projects/resume-match/" target="_blank">SourceForge</a>
+            </div>
+        </div>
+    </form>
+
+    {% block resume_match_content %}{% endblock %}
+</div>
+{% endblock content %}
